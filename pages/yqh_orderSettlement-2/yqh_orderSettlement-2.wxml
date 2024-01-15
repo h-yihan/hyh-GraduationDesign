@@ -1,0 +1,89 @@
+<!--pages/yqh_orderSettlement/yqh_orderSettlement.wxml-->
+<navigation-bar title="订单结算" back="{{true}}" color="black"></navigation-bar>
+<view class="container">
+  <!-- 头部-邀请朋友一起喝 -->
+  <view class="head">
+    <text class="head-1">呼唤朋友一起喝</text>
+    <text class="head-2">限时拼姐妹葡系列 3人拼单抽1人免单</text>
+    <view class="head-3">
+      <text class="head-3-1">邀请好友</text>
+    </view>
+  </view>
+
+  <!-- 订单进度条 -->
+  <view class="dinDan">
+    <view class="dinDan-middle">
+      <text class="dinDan-1">廖广大 准备提交订单</text>
+      <view class="dinDan-2"></view>
+      <view class="dinDan-3">
+        <text class="dinDan-3-1">点单</text>
+        <text class="dinDan-3-2">好友提交订单</text>
+        <text class="dinDan-3-3">好友付款</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 自取门店 -->
+  <view class="ziQu">
+    <view class="ziQu-left">
+      <view class="address">
+        <text class="address-1">自取门店：</text>
+        <text class="address-2">贵阳鸿通城店</text>
+      </view>
+      <text class="distance">距离您30.6km</text>
+    </view>
+    <view class="ziQu-right">
+      <image class="ziQu-image" src="https://heyihan.codedemo.vip/right-arrow.png" mode="" />
+    </view>
+  </view>
+
+  <!-- 点单 -->
+  <!-- 我的点单 -->
+  <view class="diandan">
+  
+    <view class="diandan-1">
+      <text class="diandan-text">我的点单</text>
+    </view>
+    <!-- 用户-头像-名字-立即点单 -->
+    <view class="user">
+
+      <view class="user-left">
+        <view class="user-headPortrait"></view>
+        <view class="user-petNmae">何亦涵（我）</view>
+      </view>
+      <view class="user-right">
+        <view class="user-btn user-text">清空</view>
+        <view class="user-btn">修改</view>
+      </view>
+
+    </view>
+
+    <!-- 订单商品详情 -->
+    <view wx:for="{{spxx_js}}" class="spxx-js">
+      <!-- 商品实物图 -->
+      <view class="js-1">{{item.js_1}}</view>
+      <view class="js-2">
+        <view class="js-2-1">{{item.js_2}}</view>
+        <view class="js-2-2">{{item.js_3}}</view>
+      </view>
+      <view class="js-3">
+        <view class="js-3-1">¥ {{item.js_4}}</view>
+        <view class="js-3-2">X{{item.js_5}}</view>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<view style="height: 300rpx;"></view>
+
+<!-- 订单结算 -->
+<view class="footer">
+  <view class="footer-left">
+    <text class="left-1">￥34</text>
+    <text class="left-2">如有商品参与优惠/活动，请结算实付金额为准</text>
+  </view>
+  <view class="footer-btn">
+    <text class="btn-text">结算</text>
+  </view>
+</view>

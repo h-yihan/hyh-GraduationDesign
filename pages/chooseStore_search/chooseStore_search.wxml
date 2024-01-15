@@ -1,0 +1,41 @@
+<!--pages/chooseStore_search/chooseStore_search.wxml-->
+<navigation-bar title="搜索" back="{{true}}" color="black" background="#fff"></navigation-bar>
+<view class="container">
+  <view class="head">
+    <!-- 搜索框 -->
+    <view class="search">
+      <image class="search-image" src="/pages/chooseStore/images/search.png" mode="" />
+      <input class="search-text" type="text" />
+    </view>
+    <text class="search-text">取消</text>
+  </view>
+
+  <!-- 搜索到的内容 -->
+  <view class="search-content">
+    <view class="search-content-middle">
+      <view class="content-left">
+        <text class="content-left-1">碧桂园·花溪1号</text>
+        <text class="content-left-2">贵州省贵阳市花溪区甲秀南路543号</text>
+      </view>
+      <text class="content-right">607.8km</text>
+    </view>
+  </view>
+  <view class="search-content">
+    <view class="search-content-middle">
+      <view class="content-left">
+        <text class="content-left-1">碧桂园·花溪1号</text>
+        <text class="content-left-2">贵州省贵阳市花溪区甲秀南路543号</text>
+      </view>
+      <text class="content-right">607.8km</text>
+    </view>
+  </view>
+  <view class="search-content">
+    <view class="search-content-middle">
+      <view class="content-left">
+        <text class="content-left-1">碧桂园·花溪1号</text>
+        <text class="content-left-2">贵州省贵阳市花溪区甲秀南路543号</text>
+      </view>
+      <text class="content-right">607.8km</text>
+    </view>
+  </view>
+</view>

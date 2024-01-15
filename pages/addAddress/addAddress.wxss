@@ -1,0 +1,104 @@
+/* pages/addAddress/addAddress.wxss */
+.input {
+  width: 750rpx;
+  height: 104rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.input .input-left {
+  padding-left: 40rpx;
+  font-size: 28rpx;
+  height: 104rpx;
+  line-height: 104rpx;
+}
+
+.input .input-right {
+  display: flex;
+  width: 556rpx;
+  height: 104rpx;
+}
+
+.input-right input,
+.input-right .input-1 {
+  font-size: 28rpx;
+  line-height: 104rpx;
+  height: 104rpx;
+}
+
+/* 性别 */
+label {
+  /*设置label的样式*/
+  font-size: 28rpx;
+  width: 60px;
+  height: 102rpx;
+  line-height: 102rpx;
+}
+
+/* 改变单选按钮大小 */
+radio .wx-radio-input {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+/* 选中后的背景样式 */
+radio .wx-radio-input.wx-radio-input-checked {
+  border-color: rgba(52, 52, 52, 1);
+  background-color: rgba(52, 52, 52, 1);
+}
+
+/* 选中后的勾子样式 */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 25rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #FFF;
+}
+
+
+/* 改变多选框选按钮大小 */
+checkbox .wx-checkbox-input {
+  width: 25rpx;
+  height: 25rpx;
+  border-radius: 50%;
+}
+
+
+/* 选中后的背景样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border-color: rgba(52, 52, 52, 1);
+  background-color: rgba(52, 52, 52, 1);
+}
+
+/* 选中后的勾子样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 25rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #FFF;
+}
+
+/* 保存按钮 */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  height: 160rpx;
+  background-color: #fff;
+}
+
+.button .btn {
+  width: 670rpx;
+  height: 96rpx;
+  background-color: rgba(206, 206, 206, 1);
+  font-size: 28rpx;
+  line-height: 56rpx;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}

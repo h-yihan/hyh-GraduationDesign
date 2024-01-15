@@ -1,0 +1,124 @@
+/* pages/diandan_more/diandan_more.wxss */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 686rpx;
+  height: 88rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 地址 */
+.header .address {
+  width: 313rpx;
+  height: 88rpx;
+}
+
+.header .address .address-1 {
+  font-size: 32rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.header .address .address-2 {
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* 选择方式 */
+.header .xzfs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 188rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
+  border: 1px solid rgba(232, 232, 232, 1);
+  background-color: rgba(246, 246, 246, 1);
+}
+
+/* 选择方式-自取 */
+.header .xzfs .zq {
+  width: 88rpx;
+  height: 56rpx;
+  border-radius: 32rpx;
+  background: rgba(52, 52, 52, 1);
+  font-size: 24rpx;
+  line-height: 56rpx;
+  text-align: center;
+  color: rgba(254, 255, 254, 1);
+}
+
+/* 选择方式-外卖 */
+.header .xzfs .wm {
+  width: 88rpx;
+  height: 56rpx;
+  border-radius: 32rpx;
+  background-color: rgba(246, 246, 246, 1);
+  font-size: 24rpx;
+  line-height: 56rpx;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.dianMore{
+  display: flex;
+}
+.add {
+  width: 686rpx;
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  line-height: 45rpx;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: darkblue;
+}
+
+.anquan {
+  width: 686rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+
+.peiSon {
+  display: flex;
+  flex-direction: column;
+  width: 686rpx;
+  height: 326rpx;
+  justify-content: space-between;
+}
+
+.peiSon .peiSon-title {
+  font-size: 32rpx;
+}
+
+.peiSon .peiSon-1,
+.peiSon .peiSon-2 {
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*门店信息 */
+.mdxx {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  width: 686rpx;
+  height: 282rpx;
+  justify-content: space-between;
+}
+
+.mdxx .mdxx-title {
+  font-size: 32rpx;
+}
+
+.mdxx .mdxx-1 {
+  line-height: 45rpx;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}

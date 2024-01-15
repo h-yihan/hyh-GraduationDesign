@@ -1,0 +1,79 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/diandan/diandan",
+    "pages/diandanMore/diandanMore",
+    "pages/goods/goods",
+    "pages/order/order",
+    "pages/orderPayment/orderPayment",
+    "pages/my/my",
+    "pages/specialSubject/specialSubject",
+    "pages/productDetails/productDetails",
+    "pages/deliveryAddress/deliveryAddress",
+    "pages/addAddress/addAddress",
+    "pages/location/location",
+    "pages/remarks/remarks",
+    "pages/chooseStore/chooseStore",
+    "pages/goods_productDetails/goods_productDetails",
+    "pages/ShoppingBagUnfolding/ShoppingBagUnfolding",
+    "pages/yqh_zq/yqh_zq",
+    "pages/chooseStore_search/chooseStore_search",
+    "pages/yqh_orderSettlement/yqh_orderSettlement",
+    "pages/yqh_orderSettlement-2/yqh_orderSettlement-2",
+    "pages/restRemiinder/restRemiinder",
+    "pages/yqh_orderPayment/yqh_orderPayment"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#2c2c2c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./pages/images/tabBar/index.png",
+        "selectedIconPath": "./pages/images/tabBar/index-selected.png"
+      },
+      {
+        "pagePath": "pages/diandan/diandan",
+        "text": "点单",
+        "iconPath": "./pages/images/tabBar/diandan.png",
+        "selectedIconPath": "./pages/images/tabBar/diandan-slelcted.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "百货",
+        "iconPath": "./pages/images/tabBar/goods.png",
+        "selectedIconPath": "./pages/images/tabBar/goods-selected.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "./pages/images/tabBar/order.png",
+        "selectedIconPath": "./pages/images/tabBar/order-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./pages/images/tabBar/my.png",
+        "selectedIconPath": "./pages/images/tabBar/my-selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

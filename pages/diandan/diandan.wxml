@@ -1,0 +1,123 @@
+<!--pages/diandan/diandan.wxml-->
+<navigation-bar title="点单" back="{{false}}" color="black"></navigation-bar>
+<view class="container">
+  <!-- 门店信息 -->
+  <view class="mdxx">
+    <view class="top">
+      <view class="address">
+        <view bind:tap="addressTap" class="address-1">
+          <image style="width: 24rpx; height:24rpx;margin-right: 16rpx;" src="https://heyihan.codedemo.vip/wjx.png" mode="" />
+          <text>广州融创茂GO店</text>
+          <image style="width: 11rpx;height: 24rpx; padding-left:15rpx;" src="https://heyihan.codedemo.vip/right-arrow.png" mode="" />
+        </view>
+        <view class="address-2">距离您1525.2km</view>
+      </view>
+      <view class="xzfs">
+        <view class="zq">自取</view>
+        <!-- <view class="wm">外卖</view> -->
+        <navigator url="../deliveryAddress/deliveryAddress" class="wm">外卖</navigator>
+      </view>
+    </view>
+    <view class="bottom">
+      <view wx:if="{{add_boolean}}" class="bottom-1">黑松露炒蛋可颂上新，浓郁黑松露酱包蛋糕…</view>
+      <view bind:tap="onTap" class="bottom-2" url="../diandanMore/diandanMore">
+        <text>{{add_text}}</text>
+        <image style="width:23rpx;height: 12rpx; margin-left: 4rpx; padding-top: 12rpx;" src="{{add_image}}" mode="" />
+      </view>
+    </view>
+    <view wx:if="{{!add_boolean}}" class="dianMore" style="position: fixed; top: 340rpx; width: 750rpx; height:{{add_height}}vh; background-color: rgba(254, 255, 254, 1); z-index: 9999;">
+      <view class="dianMore-content">
+        <!-- 上新广告 -->
+        <view class="add">
+          <text class="add-text">黑松露炒蛋可颂上新，浓郁黑松露酱包蛋糕…</text>
+          <text class="add-text">黑松露炒蛋可颂上新，浓郁黑松露酱包蛋糕…</text>
+          <text class="add-text">黑松露炒蛋可颂上新，浓郁黑松露酱包蛋糕…</text>
+        </view>
+
+        <!-- 安全档案 -->
+        <text class="anquan">查看食品安全档案></text>
+
+        <!-- 配送 -->
+        <view class="peiSon">
+          <text class="title">配送</text>
+          <text class="peiSon-1">2012年，喜茶HEYTEA起源于一条名叫江边里的小巷，原名皇茶ROYALTEA。为了与层出不穷的山寨品牌区分开来，故全面升级为注册品牌喜茶HEYTEA。</text>
+          <text class="peiSon-1">喜茶为芝士现泡茶的原创者。自创立以来，喜茶专注于呈现来自世界各地的优质茶香， 让茶饮这一古老文化焕发出新的生命力。</text>
+        </view>
+
+        <!-- 门店信息 -->
+        <view class="mdxx">
+          <text class="title">门店信息</text>
+          <text class="mdxx-1">目前我们旗下仅有「喜茶」和「喜茶热麦」两个品牌,除此之外所有与此类似或者添加前后缀的品牌均与我们无关。我司拥有「喜茶HEYTEA」与「喜茶热麦」的完整商标权，对于任何企业或个人侵犯喜茶注册商标专用权的行为，我们都将予以打击，并追究相关主体的法律责任。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 侧边栏、菜品 -->
+  <view class="content">
+    <!-- 侧边栏 -->
+    <view class="aside">
+      <view class="cd-1 cd">当季限定</view>
+      <view class="cd">每日鲜食</view>
+      <view class="cd">喜茶制冰</view>
+      <view class="cd">水果家族</view>
+      <view class="cd">茗茶波波家…</view>
+      <view class="cd">喜茶瓶装</view>
+      <view class="cd">周边/茶叶</view>
+      <view class="cd">加点小料</view>
+    </view>
+    <!-- 菜品 -->
+    <view class="caipin">
+      <!-- 顶部 -->
+      <view class="top">
+        <view class="top-1">
+          <image class="ad-picture" src="https://heyihan.codedemo.vip/ad-prcture.jpg" mode="" />
+        </view>
+      </view>
+      <view class="middle">当季限定</view>
+
+      <!--底部 -->
+      <view class="bottom">
+        <!-- 商品详细信息 -->
+        <!-- <navigator url="../productDetails/productDetails" wx:for="{{spxx}}" wx:for-item="item1" class="spxx"> -->
+        <view wx:for="{{spxxList}}" wx:for-item="item1" wx:key="id" class="spxx">
+          <!-- 商品实物图 -->
+          <view class="picture">
+            <image class="picture-1" src="{{item1.picture}}" mode="" />
+          </view>
+          <!-- 商品介绍 -->
+          <view class="introduce">
+            <view class="introduce-1">{{item1.goodsName}}</view>
+            <view class="introduce-2">
+              <!-- 支持配送 -->
+              <!-- 含乳制品 -->
+              <view wx:for="{{item1.label}}" wx:for-item="item2" wx:key="id" class="introduce-2-zcps ys">{{item2.name}}</view>
+            </view>
+            <view class="introduce-3">{{item1.goodsDesc}}</view>
+            <view class="introduce-4">
+              <!-- 价格 -->
+              <view class="introduce-4-price">¥ {{item1.goodsPrice}}</view>
+              <!-- 选规格 -->
+              <!-- <view class="introduce-4-xgg">选规格</view> -->
+              <navigator class="introduce-4-xgg" url="../productDetails/productDetails">选规格</navigator>
+            </view>
+          </view>
+          <!-- </navigator> -->
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 购物车 -->
+  <view class="shoppingCart">
+    <view class="shoppingCart-left">
+      <view bindtap="shoppingCart" class="shoppingCart-left-1">
+        <text class="shoppingCart-number">6</text>
+        <image class="shoppingCart-image" src="https://heyihan.codedemo.vip/gwc .png" mode="" />
+      </view>
+      <view class="shoppingCart-left-2">¥ 156</view>
+    </view>
+    <view bind:tap="onOrderPayment" class="shoppingCart-right">
+      <text>结算</text>
+    </view>
+  </view>
+</view>

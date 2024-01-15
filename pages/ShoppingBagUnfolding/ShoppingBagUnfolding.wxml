@@ -1,0 +1,61 @@
+<!--pages/ShoppingBagUnfolding/ShoppingBagUnfolding.wxml-->
+<view class="shoppingBag-unfoling">
+
+  <!-- 全选-清空购物袋 -->
+  <view class="shoppingBag-unfoling-1">
+    <label>
+      <checkbox value="" />全选
+    </label>
+    <view class="shoppingBag-unfoling-1-right">
+      <image class="shoppingBag-unfoling-1-right-image" src="./images/clear.png" mode="" />
+      <text class="shoppingBag-unfoling-1-right-text">清空购物袋</text>
+    </view>
+  </view>
+
+  <!-- 门店订单-自提外送 -->
+  <view class="shoppingBag-unfoling-2">
+    <label>
+      <checkbox value="" /> 门店订单
+    </label>
+
+    <view class="shoppingBag-unfoling-2-right">自提/外送</view>
+  </view>
+
+  <!-- 商品详情 -->
+  <view wx:for="{{shoppingBagUnfoling}}" class="shoppingBag-unfoling-3">
+    <radio-group style="line-height: 107rpx;">
+      <label>
+        <checkbox value="" />
+      </label>
+    </radio-group>
+    <!-- 实物图 -->
+    <view class="shoppingBag-unfoling-3-middle">{{item.image}}</view>
+
+    <!-- 商品详细信息-名字-描述-价格 -->
+    <view class="shoppingBag-unfoling-3-right">
+      <view class="shoppingBag-unfoling-3-right-1">{{item.shoppingBagUnfoling_1}}</view>
+      <view class="shoppingBag-unfoling-3-right-2">{{item.shoppingBagUnfoling_2}}</view>
+      <view class="shoppingBag-unfoling-3-right-3">
+        <view class="shoppingBag-unfoling-3-left-3-left">¥ {{item.shoppingBagUnfoling_price}}</view>
+        <view class="shoppingBag-unfoling-3-left-3-right">
+         <view class="minus">
+            <image style="width: 30rpx;height:5rpx;" src="./images/minus.png" mode="" />
+          </view>
+          <text style="font-size: 34rpx;" class="shoppingBag-unfoling-3-left-3-right-2">4</text>
+          <view class="add">
+            <image style="width:30rpx;height:30rpx" src="./images/add.png" mode="" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="footer">
+  <view class="footer-left">
+    <view class="footer-left-1">¥ 96</view>
+    <view class="footer-left-2">另需运费¥12 (以结算为准)</view>
+  </view>
+  <view class="footer-right">结算</view>
+</view>

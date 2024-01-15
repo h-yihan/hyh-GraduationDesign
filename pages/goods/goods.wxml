@@ -1,0 +1,90 @@
+<navigation-bar title="百货" back="{{false}}" color="black"></navigation-bar>
+<!-- banner -->
+<view class="aa">
+  <!-- banner图 -->
+  <view>
+    <swiper wx:for="{{swiper}}" interval="2000" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}" class="swiper">
+      <swiper-item wx:for="{{item.swiper_item}}">
+        <image class="swiper-image" src="{{item.image}}" mode="" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 菜单栏 -->
+  <view class="menuBar">
+    <!-- <view class="menuBar-left"> -->
+    <view bind:tap="menuBarTap" class="menuBar-left">
+      <view class="text-1">喜茶瓶装</view>
+      <view class="text-2">随时随地喝喜茶></view>
+    </view>
+    <!-- </view> -->
+    <view class="menuBar-right">
+      <view class="menuBar-right-1">
+        <view class="text-1">喜茶瓶装</view>
+        <view class="text-2">随时随地喝喜茶></view>
+      </view>
+      <view class="menuBar-right-2">
+        <view class="text-1">喜茶瓶装</view>
+        <view class="text-2">随时随地喝喜茶></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 百货上新 -->
+  <view class="bhsx">
+    <!-- 百货上新-标题 -->
+    <view class="bhsx-title">百货上新</view>
+    <view wx:for="{{goods}}" class="bhsx-body">
+      <view class="bhsx-box">
+        <image class="ad-picture" src="{{item.bhsx_box}}" mode="" />
+      </view>
+      <!-- 商品详细信息 -->
+      <view bind:tap="onGoodsDetails" class="bhsx-spxx">
+        <!-- 商品实物图 -->
+        <view class="picture-box">
+          <image class="picture-img" src="{{item.picture}}" mode="" />
+        </view>
+        <!-- 商品介绍 -->
+        <view class="introduce">
+          <view class="introduce-1">{{item.introduce_1}}</view>
+          <view class="introduce-2">{{item.introduce_2}}</view>
+          <view class="introduce-3">¥ {{item.introduce_3}}</view>
+          <view class="introduce-4">{{item.introduce_4}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<!--猜你喜欢 -->
+<view class="like">
+  <!-- 猜你喜欢-标题 -->
+  <view class="like-title">猜你喜欢</view>
+  <!-- 猜你喜欢-商品详细信息 -->
+  <view class="like-spxx">
+    <!-- 商品详c细信息-左 -->
+    <view wx:for="{{like}}" class="like-spxx-goods">
+      <!-- 商品实物图 -->
+      <view class="picture">
+        <image style="width: 332rpx;height:332rpx" src="{{item.img}}" mode="" />
+      </view>
+      <!-- 商品介绍 -->
+      <view class="introduce">
+        <view class="introduce-1">{{item.goods_name}}</view>
+        <view class="introduce-2">
+          <!-- 价格、销量 -->
+          <view class="introduce-2-1">
+            <!-- 价格 -->
+            <text class="price">{{item.goods_price}}</text>
+            <!-- 销量 -->
+            <text class="xl">{{item. sale_num}}</text>
+          </view>
+          <!-- 添加 -->
+          <view class="introduce-2-2">
+            <image style="width:25rpx;height:25rpx" src="https://heyihan.codedemo.vip/add.png" mode="" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

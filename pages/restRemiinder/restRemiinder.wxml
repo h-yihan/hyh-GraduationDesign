@@ -1,0 +1,47 @@
+<!--pages/restRemiinder/restRemiinder.wxml-->
+<view class="background">
+
+  <view class="bgc-container">
+
+    <!-- 提示 -->
+    <view class="remid">
+
+      <text class="remid-title">本店休息中，您可切换门店</text>
+
+      <view class="business-hours">
+        <text class="business-hours-text">本店营业时间：</text>
+        <text class="business-hours-text">周一至周四 10:00-22:00</text>
+        <text class="business-hours-text">周五至周日 10:00-22:30</text>
+        <text class="business-hours-text">期待光临</text>
+      </view>
+
+      <view class="btn">
+        <view class="btn-1">
+          <text>留在当前</text>
+        </view>
+        <view class="btn-1 btn-2">
+          <text>切换门店</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 开启提醒通知 -->
+    <view class="open">
+      <view class="open-left">
+        <view class="open-left-1">
+          <image class="open-left-image" src="https://heyihan.codedemo.vip/restRemiinder-sound.png" mode="" />
+          <text class="open-left-text">开启提醒通知</text>
+        </view>
+        <text class="open-left-2">门店开始营业时，我们将以服务通知/短信消息的形式通知您</text>
+      </view>
+      <view class="open-right">
+        <view class="open-btn open-btn-1">
+          <text>开启</text>
+        </view>
+        <view class="open-btn">
+          <text>关闭</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

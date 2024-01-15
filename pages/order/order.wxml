@@ -1,0 +1,4 @@
+<!--pages/order/order.wxml-->
+<navigation-bar title="订单" back="{{false}}" color="black" ></navigation-bar>
+
+<view class="body" style="background-color: aquamarine; height: 1000rpx;"></view>

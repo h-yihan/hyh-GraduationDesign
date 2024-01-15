@@ -1,0 +1,198 @@
+/* pages/order/order.wxss */
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  width: 670rpx;
+  height: 376rpx;
+  background-color: rgba(216, 216, 216, 1);
+}
+
+.comm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 54rpx;
+  width: 590rpx;
+  height: 238rpx;
+}
+
+.comm .comm-title {
+  height: 40rpx;
+  font-size: 36rpx;
+}
+
+.comm .comm-hrzp {
+  font-size: 24rpx;
+  width: 96rpx;
+  height: 36rpx;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(216, 216, 216, 1);
+}
+
+.comm .comm-js {
+  width: 590rpx;
+  height: 116rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.flei {
+  margin-top: 32rpx;
+  width: 590rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 116rpx;
+}
+
+.flei .flei-title {
+  height: 40rpx;
+  font-size: 24rpx;
+}
+
+.flei .pliao {
+  display: flex;
+  height: 60rpx;
+}
+
+.pliao-0 {
+  font-size: 24rpx;
+  padding: 0 24rpx;
+  margin-right: 24rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  border-radius: 8rpx;
+
+}
+
+.flei .pliao .pliao-1 {
+  background-color: rgba(247, 238, 227, 1);
+}
+
+.flei .pliao .pliao-2 {
+  padding: 0 24rpx;
+  background-color: rgba(245, 245, 247, 1);
+}
+
+.commen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 40rpx;
+  width: 590rpx;
+  height: 388rpx;
+}
+
+.commen .commen-top {
+  display: flex;
+  justify-content: space-between;
+  width: 590rpx;
+  height: 57rpx;
+}
+
+.commen .commen-top-left {
+  display: flex;
+}
+
+.commen .commen-top-left .left-1 {
+  width: 52rpx;
+  height: 52rpx;
+  background-color: chartreuse;
+  border-radius: 50%;
+}
+
+.commen .commen-top-left .left-2 {
+  margin-left: 8rpx;
+  font-size: 24rpx;
+}
+
+.commen .commen-top-right {
+  font-size: 24rpx;
+}
+
+.commen .commen-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 50rpx;
+  width: 530rpx;
+  height: 290rpx;
+}
+
+.commen .commen-bottom .commen-text {
+  width: 530rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+}
+
+
+.commen .commen-bottom .commen-picture {
+  display: flex;
+  width: 530rpx;
+  height: 162rpx;
+}
+
+.commen .commen-bottom .commen-picture .commen-picture-1 {
+  width: 160rpx;
+  height: 162rpx;
+  background-color: rgba(216, 216, 216, 1);
+  margin-right: 18rpx;
+  border-radius: 8rpx;
+}
+
+.shoppingBag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 670rpx;
+  height: 268rpx;
+}
+
+.shoppingBag .shoppingBag-top {
+  display: flex;
+  justify-content: space-between;
+  width: 590rpx;
+  height: 108rpx;
+  background-color: #fff;
+}
+
+.shoppingBag .shoppingBag-top .left {
+  width: 409rpx;
+  height: 108rpx;
+}
+
+.shoppingBag .shoppingBag-top .left .left-1 {
+  font-size: 34rpx;
+  line-height: 40rpx;
+  color: rgba(219, 168, 113, 1);
+}
+
+.shoppingBag .shoppingBag-top .left .left-2 {
+  font-size: 24rpx;
+  line-height:35rpx;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.shoppingBag .shoppingBag-top .right {
+  width: 165rpx;
+  height: 108rpx;
+  background-color: coral;
+}
+
+.shoppingBag .shoppingBag-bottom {
+  margin-top: 24rpx;
+  width: 590rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 39px;
+  background: rgba(237, 211, 184, 1);
+  font-size: 28rpx;
+  color: rgba(254, 255, 254, 1);
+  text-align: center;
+}

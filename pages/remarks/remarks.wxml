@@ -1,0 +1,22 @@
+<!--pages/remarks/remarks.wxml-->
+<navigation-bar title="订单结算" back="{{true}}" color="black"></navigation-bar>
+<view class="body">
+
+  <!-- 文本域 -->
+  <textarea style="position: relative;" bindinput='limitWord' maxlength='50' placeholder-style="color:#5F5F5F;" value="{{content}}" class="input" name="remark" placeholder="口味、包装等要求">
+  <text style="position: absolute; right: 0; bottom: 0; color:#5F5F5F;">{{currentWord}}/{{maxWord}}</text>
+  </textarea>
+
+  <!-- 快捷输入 -->
+  <view class="kjsr">快捷输入</view>
+
+  <!-- 快捷输入-提示 -->
+  <view wx:for="{{pointOut}}" wx:for-item="item1" class="point-out">
+    <view wx:for="{{item1.point_out_1}}"wx:for-item="item2" class="point-out-1">{{item2.name}}</view>
+  </view>
+
+  <!-- 提交 -->
+  <view class="button">
+    <button class="btn" type="primary">提交</button>
+  </view>
+</view>

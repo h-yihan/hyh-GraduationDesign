@@ -1,0 +1,220 @@
+/* pages/yqh_zq/yqh_zq.wxss */
+/* <!-- 一起喝-自取 --> */
+page {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.body {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+  border-radius: 12rpx 12rpx 0rpx 0rpx;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* 一起喝-头部 */
+.head {
+  display: flex;
+  align-items: center;
+  width: 670rpx;
+  height: 120rpx;
+}
+
+.head .head-text {
+  font-size: 28rpx;
+}
+
+.head .head-2 {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* 一起喝-选择方式 */
+.xzfs {
+  display: flex;
+  justify-content: space-between;
+  width: 670rpx;
+  height: 142rpx;
+}
+
+.xzfs-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320rpx;
+  height: 138rpx;
+  border: 2rpx solid rgba(240, 240, 240, 1);
+}
+
+/* 地址- 配送地址 */
+.delyvery-Address {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 670rpx;
+  height: 145rpx;
+}
+
+.delyvery-Address .delyvery-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 520rpx;
+  height: 145rpx;
+}
+
+.delyvery-Address .delyvery-left .delyvery-title {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.delyvery-Address .delyvery-left .delyvery-left-1 {
+  display: flex;
+  align-items: center;
+}
+
+.delyvery-Address .delyvery-left .delyvery-left-text-1 {
+  font-size: 30rpx;
+  margin-right: 16rpx;
+}
+
+.delyvery-Address .delyvery-left .delyvery-left-text-2 {
+  font-size: 18rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 18px;
+  color: rgba(254, 60, 49, 1);
+  background-color: rgba(254, 231, 230, 1);
+}
+
+.delyvery-Address .delyvery-left .delyvery-left-2 {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.delyvery-Address .delyvery-right {
+  margin-top: 75rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  width: 120rpx;
+  height: 52rpx;
+  border-radius: 26px;
+  border: 2rpx solid rgba(240, 240, 240, 1);
+}
+
+/* 自取门店地址 */
+.address {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 670rpx;
+  height: 198rpx;
+}
+
+.address .address-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 520rpx;
+  height: 198rpx;
+}
+
+.address .address-left .address-title {
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.address .address-left .address-left-2 .address-left-text-1 {
+  font-size: 30rpx;
+  margin-right: 16rpx;
+}
+
+.address .address-left .address-left-2 .address-left-text-2 {
+  font-size: 22rpx;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.address .address-left .address-left-3 {
+  display: flex;
+  align-items: center;
+}
+
+.address .address-left .address-left-3 .address-left-3-1 {
+  width: 21rpx;
+  height: 27rpx;
+  margin-right: 8rpx;
+}
+
+.address .address-left .address-left-3 .address-left-3-2 {
+  font-size: 24rpx;
+  height: 32rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.address .address-left .address-left-4 {
+  display: flex;
+}
+
+.address .address-left .address-left-4 .address-left-4-1 {
+  width: 60rpx;
+  background: rgba(52, 52, 52, 1);
+  text-align: center;
+  font-size: 18rpx;
+  line-height: 28rpx;
+  color: #ffffff;
+}
+
+.address .address-left .address-left-4 .address-left-4-2 {
+  padding: 0 10rpx;
+  height: 28rpx;
+  border-radius: 4rpx;
+  background: rgba(219, 170, 113, 1);
+  font-size: 18rpx;
+  line-height: 28rpx;
+  color: #ffffff;
+}
+
+/* 自取门店地址-右边（切换按钮）*/
+.address .address-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  width: 120rpx;
+  height: 52rpx;
+  opacity: 1;
+  border-radius: 26px;
+  border: 2rpx solid rgba(240, 240, 240, 1);
+}
+
+/* 按钮： 我再想想-发起*/
+.footer {
+  margin-top: 64rpx;
+  margin-bottom: 96rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 671rpx;
+  height: 96rpx;
+}
+
+.footer .btn {
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 96rpx;
+  width: 319rpx;
+  height: 96rpx;
+  border-radius: 6rpx;
+  background: rgba(242, 242, 242, 1);
+}
+
+.footer .footer-2 {
+  background-color: rgba(219, 168, 113, 1);
+  color: #fff;
+}

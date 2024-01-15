@@ -1,0 +1,64 @@
+<!--pages/addAddress/addAddress.wxml-->
+<navigation-bar title="添加地址" back="{{true}}" color="black"></navigation-bar>
+<view class="body">
+  <!-- 联系人 -->
+  <view class="input">
+    <view class="input-left">联系人</view>
+    <view class="input-right">
+      <input placeholder="请填写收货人姓名" type="text" />
+    </view>
+  </view>
+
+  <!-- 手机号 -->
+  <view class="input">
+    <view class="input-left">手机号</view>
+    <view class="input-right">
+      <input placeholder="请填写收货人手机号" type="text" />
+    </view>
+  </view>
+
+
+  <!-- 性别 -->
+  <view class="input">
+    <view class="input-left">性别</view>
+    <radio-group class="input-right" name="radio">
+      <label>
+        <radio value="sex" />先生
+      </label>
+      <label>
+        <radio value="sex" />女士
+      </label>
+    </radio-group>
+  </view>
+
+
+  <!-- 收货地址 -->
+  <view class="input">
+    <view class="input-left">收货地址</view>
+    <view class="input-right">
+      <text class="input-1" style="color: rgba(0, 0, 0, 0.6);" bind:tap="inputTap">点击选择</text>
+    </view>
+  </view>
+
+  <!-- 门牌号 -->
+  <view class="input">
+    <view class="input-left">门牌号</view>
+    <view class="input-right">
+      <input placeholder="例:B座6楼608室" type="text" />
+    </view>
+  </view>
+
+  <!-- 默认地址 -->
+  <view class="input">
+    <radio-group style="padding-left: 40rpx; color: rgba(0, 0, 0, 0.6);">
+      <label>
+        <checkbox value="" />设为默认地址
+      </label>
+    </radio-group>
+  </view>
+
+  <!-- 保存 -->
+  <view class="button">
+    <button class="btn">保存</button>
+  </view>
+</view>

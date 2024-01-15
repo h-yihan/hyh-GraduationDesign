@@ -1,0 +1,41 @@
+<!--pages/diandan_more/diandan_more.wxml-->
+<!--index.wxml-->
+<navigation-bar title="首页" back="{{true}}" color="black" background="#fff"></navigation-bar>
+
+<view class="body">
+<!-- 地址、选择方式 -->
+<view class="header">
+  <view class="address">
+    <view class="address-1">☆ 广州融创茂GO店</view>
+    <view class="address-2">距离您1525.2km</view>
+  </view>
+  <view class="xzfs">
+    <view class="zq">自取</view>
+    <view class="wm">外卖</view>
+  </view>
+</view>
+
+<!-- 上新广告 -->
+<view class="add">
+  <view class="add-1">黑松露炒蛋可颂上新，浓郁黑松露酱包蛋糕…</view>
+  <view class="add-2">黑松露炒蛋可颂上新，浓郁黑松露酱包蛋糕…</view>
+  <view class="add-3">黑松露炒蛋可颂上新，浓郁黑松露酱包蛋糕…</view>
+</view>
+
+<!-- 安全档案 -->
+<view class="anquan">查看食品安全档案></view>
+
+<!-- 配送 -->
+<view class="peiSon">
+  <view class="peiSon-title">配送</view>
+  <view class="peiSon-1">2012年，喜茶HEYTEA起源于一条名叫江边里的小巷，原名皇茶ROYALTEA。为了与层出不穷的山寨品牌区分开来，故全面升级为注册品牌喜茶HEYTEA。</view>
+  <view class="peiSon-1">喜茶为芝士现泡茶的原创者。自创立以来，喜茶专注于呈现来自世界各地的优质茶香， 让茶饮这一古老文化焕发出新的生命力。</view>
+</view>
+
+<!-- 门店信息 -->
+<view class="mdxx">
+  <view class="mdxx-title">配送</view>
+  <view class="mdxx-1">目前我们旗下仅有「喜茶」和「喜茶热麦」两个品牌,除此之外所有与此类似或者添加前后缀的品牌均与我们无关。我司拥有「喜茶HEYTEA」与「喜茶热麦」的完整商标权，对于任何企业或个人侵犯喜茶注册商标专用权的行为，我们都将予以打击，并追究相关主体的法律责任。</view>
+</view>
+</view>
+

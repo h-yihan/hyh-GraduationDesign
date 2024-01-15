@@ -1,0 +1,55 @@
+<!--pages/chooseStore/chooseStore.wxml-->
+<navigation-bar title="选择门店" back="{{true}}" color="black"></navigation-bar>
+<view class="body">
+  <view class="nav">
+    <view class="nav-left"><text>选择门店</text></view>
+    <view class="nav-right">常用/收藏</view>
+  </view>
+
+  <view class="address-search">
+    <view class="address">
+      <text class="address-1">广州市</text>
+      <image class="address-2" src="./images/right-jt.png" mode="" />
+    </view>
+
+    <!-- 搜索框 -->
+    <view bind:tap="onSearchTap" class="search">
+      <image class="search-jpg" src="./images/search.png" />
+      <input type="text" placeholder="搜索" />
+    </view>
+  </view>
+
+
+  <!-- 地图展开、收起 -->
+  <view style="display: flex; align-items: center; justify-content: center; width: 750rpx; height: {{map_height}}rpx; background-color: rgba(216, 216, 216, 1)">
+    <!-- <map></map> -->
+  </view>
+  <button class="map-button" bindtap="map">{{map_text}}
+    <image style="width: 24rpx; height:24rpx;" src="{{map_image}}" mode="" />
+  </button>
+
+
+  <!-- 收货地址 -->
+  <view wx:for="{{deliveryAddress}}" class="deliveryAddress">
+    <view class="deliveryAddress-left">
+      <text class="deliveryAddress-left-1">{{item.deliveryAddress_1}}</text>
+      <view class="deliveryAddress-left-2">
+        <view class="box"></view>
+        <text>{{item.deliveryAddress_2}}</text>
+      </view>
+      <view class="deliveryAddress-left-3">
+        <image class="deliveryAddress-left-3-image" src="./images/weizhi.png" mode="" />
+        <text>{{item.deliveryAddress_3}}</text>
+      </view>
+      <view class="deliveryAddress-left-4">
+        <image class="deliveryAddress-left-4-image" src="./images/biao.png" mode="" />
+        <text>{{item.deliveryAddress_4}}</text>
+      </view>
+    </view>
+    <view class="deliveryAddress-right">
+      <text class="deliveryAddress-right-1">去下单</text>
+      <text class="deliveryAddress-right-2">距离{{item.deliveryAddress_5}}</text>
+    </view>
+  </view>
+  <view style="height: 600rpx;"></view>
+</view>

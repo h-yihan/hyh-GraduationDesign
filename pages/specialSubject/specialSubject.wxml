@@ -1,0 +1,64 @@
+<!--pages/specialSubject/specialSubject.wxml-->
+<navigation-bar title="喜茶瓶装" back="{{true}}" color="black" background-color="rgba(255, 255, 255, 1)"></navigation-bar>
+
+<view class="body">
+  <!-- 大banner图 -->
+  <view class="banner">
+    <image class="banner-image" src="https://heyihan.codedemo.vip/goodsBanner.png" mode="" />
+  </view>
+
+
+  <view class="a">
+    <view class="a-title"><text class="color-1">喜茶瓶装</text></view>
+    <view class="a-bottom">
+      <view class="bottom-left">
+        <view class="bottom-left-1 bottom-left-2">综合</view>
+        <view class="bottom-left-1">销量</view>
+        <view class="bottom-left-1 bottom-left-3">
+          <text class="price-left">价格</text>
+          <view class="price-right" >
+            <image class="triangle" style="margin-bottom: 5rpx;" src="./images/up.png" mode="" />
+            <image class="triangle" src="./images/down.png" mode="" />
+          </view>
+        </view>
+      </view>
+      <view class="bottom-right">
+      <image style="width:36rpx;height: 36rpx;" src="./images/list.png" mode=""/>
+      </view>
+    </view>
+  </view>
+
+  <!-- 商品竖排 -->
+  <view class="goods" style="margin: 0 auto;">
+    <view wx:for="{{goods}}" class="goods-sp">
+      <!-- 商品实物图 -->
+      <view class="picture">
+        <image style="width: 331rpx;height: 331rpx;" src="{{item.img}}" mode="" />
+      </view>
+      <!-- 商品介绍 -->
+      <view class="introduce">
+        <view class="introduce-1">{{item.goods_name}}</view>
+        <view class="introduce-2">
+          <!-- 价格、销量 -->
+          <view class="introduce-2-1">
+            <!-- 价格 -->
+            <view>
+              <text class="price">{{item.goods_price}}</text>
+            </view>
+            <!-- 销量 -->
+            <text class="xl">{{item. sale_num}}</text>
+          </view>
+          <!-- 添加 -->
+          <view class="introduce-2-2">
+            <image class="add-image" src="https://heyihan.codedemo.vip/add.png" mode="" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 页脚 -->
+  <view class="footer">
+    - 已经到底啦，去其他页面逛逛吧 -
+  </view>
+</view>

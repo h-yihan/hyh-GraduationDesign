@@ -1,0 +1,26 @@
+<!--pages/deliveryAddress/deliveryAddress.wxml-->
+<navigation-bar title="收货地址" back="{{true}}" color="black"></navigation-bar>
+
+<view class="body" style="background-color: rgba(245, 245, 245, 1);">
+  <view class="title">当前城市</view>
+  <!-- 收货地址 -->
+  <view wx:for="{{delivery_address}}" class="delivery-address">
+    <view class="delivery-address-left">
+      <view class="left-address"> <text>{{item.address_city}}</text>丨<text>{{item.address_detailed}}</text></view>
+      <view class="left-NameTelnumber"><text>{{item.Name}}  {{item.Telnumber}}</text></view>
+    </view>
+    <image bind:tap="imageTap" src="./images/add.png"  class="delivery-address-right"></image>
+  </view>
+
+  <view style="height: 600rpx;"></view>
+
+  <!-- 添加地址方式 -->
+  <view class="add">
+    <!-- 微信导入 -->
+    <view class="add-wxdr">微信导入</view>
+
+    <!--添加地址 -->
+    <!-- <view class="add-address">添加地址</view> -->
+    <navigator url="../addAddress/addAddress" class="add-address">添加地址</navigator>
+  </view>
+</view>

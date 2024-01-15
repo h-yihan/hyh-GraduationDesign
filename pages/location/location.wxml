@@ -1,0 +1,23 @@
+<!--pages/location/location.wxml-->
+<navigation-bar title="位置" back="{{true}}" color="black"></navigation-bar>
+<view class="container">
+  <!-- 地图 -->
+  <view class="map"></view>
+
+  <!-- 搜索框 -->
+  <view class="search">
+    <image class="search-jpg" src="./images/search.png" />
+    <input type="text" placeholder="搜索地址" />
+  </view>
+
+  <!-- 地址 -->
+  <view wx:for="{{address}}" class="address">
+    <view class="address-1">{{item.address_1}}</view>
+    <view class="address-2">{{item.address_2}}</view>
+  </view>
+
+  <!-- 确定按钮 -->
+  <view class="button">
+    <button class="btn" type="default">确定</button>
+  </view>
+</view>

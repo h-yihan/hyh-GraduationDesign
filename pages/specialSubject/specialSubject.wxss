@@ -1,0 +1,185 @@
+/* pages/specialSubject/specialSubject.wxss */
+page {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+}
+
+.body {
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.banner {
+  width: 750rpx;
+  height: 496rpx;
+  margin-bottom: 20rpx;
+}
+
+.banner .banner-image {
+  width: 750rpx;
+  height: 496rpx;
+}
+
+
+
+.a {
+  padding: 32rpx;
+  width: 686rpx;
+  height: 136rpx;
+  background-color: white;
+  margin-bottom: 32rpx;
+}
+
+.a .a-title {
+  height: 52rpx;
+  font-size: 32rpx;
+  line-height: 52rpx;
+  color: rgba(219, 168, 113, 1);
+  margin-bottom: 45rpx;
+
+}
+
+.a .a-title .color-1 {
+  border-bottom: 2px solid rgba(219, 168, 113, 1);
+}
+
+.a .a-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40rpx;
+}
+
+.a .a-bottom .bottom-left {
+  display: flex;
+  justify-content: space-between;
+  width: 332rpx;
+  height: 40rpx;
+}
+
+.a .a-bottom .bottom-left-1 {
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.a .a-bottom .bottom-left-2 {
+  color: rgba(226, 186, 142, 1);
+}
+
+/* 价格 */
+.a .a-bottom .bottom-left-3 {
+  display: flex;
+  align-items: center;
+  width: 76rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a .a-bottom .bottom-left-3 .price-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 三角形 */
+.triangle {
+  width: 12rpx;
+  height: 10rpx;
+}
+
+.a .a-bottom .bottom-right {
+  line-height: 36rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.goods {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 686rpx;
+}
+
+.goods .goods-sp {
+  width: 331rpx;
+  height: 479rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+
+.goods .goods-sp .picture {
+  width: 331rpx;
+  height: 331rpx;
+  background-color: rgba(216, 216, 216, 1);
+}
+
+.goods .goods-sp .introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 331rpx;
+  height: 148rpx;
+}
+
+.goods .goods-sp .introduce .introduce-1 {
+  width: 293rpx;
+  height: 40rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.goods .goods-sp .introduce .introduce-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 293rpx;
+  height: 44rpx;
+}
+
+.goods .goods-sp .introduce .introduce-2 .introduce-2-1 {
+  display: flex;
+}
+
+.like .like-spxx .introduce .introduce-2 .introduce-2-1 .price-left {
+  font-size: 32rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+.goods .goods-sp .introduce .introduce-2 .introduce-2-1 .xl {
+  margin-left: 10rpx;
+  font-size: 18rpx;
+  height: 44rpx;
+  line-height: 55rpx;
+}
+
+.goods .goods-sp .introduce .introduce-2 .introduce-2-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44rpx;
+  height: 44rpx;
+  background: rgba(219, 168, 113, 1);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.goods .goods-sp .introduce .introduce-2 .introduce-2-2 .add-image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.footer {
+  margin-top: 70rpx;
+  height: 40rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 100rpx;
+}

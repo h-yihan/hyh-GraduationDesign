@@ -1,0 +1,273 @@
+page {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgba(246, 245, 246, 1);
+}
+
+.aa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: 750rpx;
+  overflow: scroll;
+}
+
+
+/* 轮播图 */
+.swiper {
+  width: 750rpx;
+  height: 496rpx;
+}
+
+.swiper .swiper-image {
+  width: 750rpx;
+  height: 496rpx
+}
+
+/* 菜单栏 */
+.menuBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rpx;
+  width: 686rpx;
+  height: 320rpx;
+}
+
+.menuBar .menuBar-left {
+  width: 327rpx;
+  height: 320rpx;
+  /* padding: 40rpx 40rpx; */
+  background-color: rgb(216, 216, 216);
+  border-radius: 16rpx;
+}
+
+.menuBar .menuBar-left .text-1 {
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  margin-bottom: 8rpx;
+}
+
+.menuBar .menuBar-left .text-2 {
+  margin-left: 40rpx;
+}
+
+.menuBar .menuBar-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 327rpx;
+  height: 320rpx;
+}
+
+.menuBar .menuBar-right .menuBar-right-1 {
+  border-radius: 16rpx;
+  width: 298rpx;
+  height: 118rpx;
+  padding: 30rpx 0 0 30rpx;
+  background-color: rgb(216, 216, 216);
+}
+
+.menuBar .menuBar-right .menuBar-right-2 {
+  border-radius: 16rpx;
+  width: 298rpx;
+  height: 118rpx;
+  padding: 30rpx 0 0 30rpx;
+  background-color: rgb(216, 216, 216);
+}
+
+.text-1 {
+  font-size: 32rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.text-2 {
+  width: 158rpx;
+  text-align: center;
+  border: 1px solid rgba(176, 175, 175, 1);
+  font-size: 18rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* 百货上新 */
+.bhsx {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  width: 686rpx;
+  margin-bottom: 32rpx;
+}
+
+/* 百货上新-标题 */
+.bhsx .bhsx-title {
+  font-size: 34rpx;
+  height: 72rpx;
+  line-height: 40rpx;
+}
+
+.bhsx .bhsx-body {
+  display: flex;
+  flex-direction: column;
+  width: 686rpx;
+  height: 608rpx;
+  margin-bottom: 30rpx;
+}
+
+/* 百货上新-的盒子 */
+.bhsx .bhsx-body .bhsx-box {
+  width: 686rpx;
+  height: 304rpx;
+}
+
+.bhsx .bhsx-body .bhsx-box .ad-picture {
+  width: 686rpx;
+  height: 304rpx;
+}
+
+/* 百货上新-商品详细信息 */
+.bhsx .bhsx-spxx {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 686rpx;
+  height: 304rpx;
+  background-color: #fff;
+}
+
+/* 百货上新-商品详细信息的实物图 */
+.bhsx-spxx .picture-box {
+  width: 272rpx;
+  height: 272rpx;
+}
+
+.bhsx-spxx .picture-box .picture-img {
+  width: 272rpx;
+  height: 272rpx;
+}
+
+/* 百货上新-商品详细信息的详细介绍 */
+.bhsx-spxx .introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 314rpx;
+  height: 236rpx;
+
+}
+
+.introduce-1 {
+  font-size: 32rpx;
+}
+
+.introduce-2 {
+  font-size: 24rpx;
+}
+
+.introduce-3 {
+  font-size: 32rpx;
+
+}
+
+.introduce-4 {
+  text-align: center;
+  line-height: 45rpx;
+  width: 141rpx;
+  height: 48rpx;
+  font-size: 24rpx;
+  border-radius: 24rpx;
+  background: rgba(219, 168, 113, 1);
+  color: #fff;
+}
+
+/* 猜你喜欢 */
+.like {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 686rpx;
+}
+
+/* 百货上新-标题 */
+.like .like-title {
+  font-size: 34rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.like .like-spxx {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.like .like-spxx .like-spxx-goods {
+  width: 331rpx;
+  height: 479rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.like .like-spxx .picture {
+  width: 331rpx;
+  height: 331rpx;
+  background-color: rgba(216, 216, 216, 1);
+}
+
+.like .like-spxx .introduce {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 331rpx;
+  height: 148rpx;
+}
+
+.like .like-spxx .introduce .introduce-1 {
+  width: 293rpx;
+  height: 40rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.like .like-spxx .introduce .introduce-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 293rpx;
+  height: 44rpx;
+}
+
+.like .like-spxx .introduce .introduce-2 .introduce-2-1 {
+  display: flex;
+}
+
+.like .like-spxx .introduce .introduce-2 .introduce-2-1 .price {
+  font-size: 32rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+.like .like-spxx .introduce .introduce-2 .introduce-2-1 .xl {
+  margin-left: 10rpx;
+  font-size: 18rpx;
+  height: 44rpx;
+  line-height: 55rpx;
+}
+
+.like .like-spxx .introduce .introduce-2 .introduce-2-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44rpx;
+  height: 44rpx;
+  background: rgba(219, 168, 113, 1);
+  border-radius: 50%;
+  color: #fff;
+}

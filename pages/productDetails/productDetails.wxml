@@ -1,0 +1,74 @@
+<!--pages/order/order.wxml-->
+
+<!-- 商品详情 -->
+<view class="body">
+  <view class="banner">
+  <swiper>
+    <swiper-item>
+      <image src="" mode=""/>
+    </swiper-item>
+  </swiper>
+  </view>
+  <view class="comm">
+    <view class="comm-title">雪山多肉青提</view>
+    <view class="comm-hrzp">含乳制品</view>
+    <view class="comm-js">目前我们旗下仅有「喜茶」和「喜茶热麦」两个品牌,除此之外所有与此类似或者添加前后缀的品牌均与我们无关。我司拥有「喜茶HEYTEA」与「喜茶热麦」...</view>
+  </view>
+
+  <!-- 分类 -->
+  <view wx:for="{{a}}" class="flei" wx:for-item="item1">
+    <view class="flei-title">{{item1.name}}</view>
+    <view class="=pliao">
+      <view wx:for="{{item1.labes}}" wx:for-item="item2" class="pliao-0 pliao-1">{{item2.name}}</view>
+    </view>
+  </view>
+
+  <!-- 评论区 -->
+  <view class="commen">
+    <view class="commen-top">
+      <view class="commen-top-left">
+        <view class="left-1"></view>
+        <view class="left-2">***里</view>
+      </view>
+      <view class="commen-top-right">785</view>
+    </view>
+    <view class="commen-bottom">
+      <view class="commen-text">孩子们为骑手小哥的敬业竖起大拇指，风雨无阻，热情，为孩子们上了一课。</view>
+      <!-- 两个盒子 -->
+      <view class="commen-picture">
+        <view class="commen-picture-1"></view>
+        <view class="commen-picture-1"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="commen">
+    <view class="commen-top">
+      <view class="commen-top-left">
+        <view class="left-1"></view>
+        <view class="left-2">***里</view>
+      </view>
+      <view class="commen-top-right">785</view>
+    </view>
+    <view class="commen-bottom">
+      <view class="commen-text">孩子们为骑手小哥的敬业竖起大拇指，风雨无阻，热情，为孩子们上了一课。</view>
+      <!-- 两个盒子 -->
+      <view class="commen-picture">
+        <view class="commen-picture-1"></view>
+        <view class="commen-picture-1"></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 加入购物车 -->
+  <view class="shoppingBag">
+    <view class="shoppingBag-top">
+      <view class="left">
+        <view class="left-1">¥ 23</view>
+        <view class="left-2">PLA可降解吸管(推荐),需要配勺(品尝果肉用),冰沙(推荐),</view>
+      </view>
+      <view class="right"></view>
+    </view>
+    <view class="shoppingBag-bottom">加入购物袋</view>
+  </view>
+</view>

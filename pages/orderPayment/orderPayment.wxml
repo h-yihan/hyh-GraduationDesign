@@ -1,0 +1,139 @@
+<!--pages/orderPayment/orderPayment.wxml-->
+<navigation-bar title="订单结算" back="{{true}}" color="black"></navigation-bar>
+
+<view class="body" style="position: relative;">
+
+  <!-- 头部_地址、联系电话 -->
+  <view class="header">
+    <view class="header-top">
+      <view class="address">
+        <view bind:tap="addressTap" class="address-1">
+          <text>广州融创茂GO店</text>
+          <image style="width: 12rpx;height: 24rpx; padding-left:15rpx;" src="https://heyihan.codedemo.vip/right-jt-black.png" mode="" />
+        </view>
+        <view class="address-2">
+          <image style="width: 24rpx;height: 30rpx; margin-right: 10rpx;" src="./images/zqmd-top.png" mode="" />
+          <text>距离您1525.2km</text>
+        </view>
+      </view>
+      <view class="xzfs">
+        <view class="zq">自取</view>
+        <navigator url="../deliveryAddress/deliveryAddress" class="wm">外卖</navigator>
+        <!-- <view class="wm">外卖</view> -->
+      </view>
+    </view>
+    <view class="header-bottom">
+      <view class="header-bottom-left">联系电话 15085968569</view>
+      <view class="header-bottom-right">自动填写</view>
+    </view>
+  </view>
+
+  <!-- 取茶时间 -->
+  <view class="tt-time">
+    <view class="tt-title">取茶时间</view>
+    <view class="pg-bar">
+      <view class="bg-image"></view>
+    </view>
+    <view class="tt-waiting-time">前面 1单/1杯 制作中，预计 3分钟 后取茶</view>
+    <view class="tt-remind">杯杯现制，新鲜呈现，请您留意取茶通知</view>
+  </view>
+
+  <!-- 商品详情 -->
+  <view class="spxx">
+    <view class="spxx-a">
+      <view class="spxx-title">商品详情</view>
+      <view class="spxx-remind">选购饮品，注意选对冰度和甜度</view>
+    </view>
+    <!-- 商品详情-介绍 -->
+    <view wx:for="{{spxx_js}}" class="spxx-js">
+      <!-- 商品实物图 -->
+      <view class="js-1">{{item.js_1}}</view>
+      <view class="js-2">
+        <view class="js-2-1">{{item.js_2}}</view>
+        <view class="js-2-2">{{item.js_3}}</view>
+      </view>
+      <view class="js-3">
+        <view class="js-3-1">¥ {{item.js_4}}</view>
+        <view class="js-3-2">X{{item.js_5}}</view>
+      </view>
+    </view>
+
+    <view class="spxx-bottom">
+      <!-- 保温袋 -->
+      <view class="spxx-bwd">
+        <view class="bwd-left">
+          <view class="bwd-left-1">
+            <view class="left-1-1">灵感保温袋</view>
+            <view class="left-1-2">自动填写</view>
+          </view>
+          <view class="bwd-left-2">保冷保温，锁住新鲜口感</view>
+        </view>
+        <view class="bwd-right">
+          <view class="bwd-right-1">￥1</view>
+          <checkbox value="" />
+        </view>
+      </view>
+      <!-- 喜茶券 -->
+      <view class="spxx-xcj">
+        <view class="xcj-left">
+          <view class="xcj-left-1 ">喜茶券</view>
+          <view class="xcj-left-2 ">券</view>
+        </view>
+        <view class="xcj-right spxx-bottom-zt">暂无可用 ></view>
+      </view>
+      <!-- 备注 -->
+      <view class="spxx-bz">
+        <view class="spxx-bottom-zt spxx-bz-left">备注</view>
+        <!-- <view class="spxx-bottom-zt spxx-bz-right">口味、包装等要求 ></view> -->
+        <navigator url="../remarks/remarks" class="spxx-bottom-zt spxx-bz-right">口味、包装等要求 ></navigator>
+      </view>
+      <!-- 共计 -->
+      <view class="spxx-gj">
+        <view class="spxx-bottom-zt spxx-gj-left">共1件商品，小计</view>
+        <view class="spxx-bottom-zt spxx-gj-right">¥ 23</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 支付方式 -->
+  <view class="zffs">
+    <text class="zffs-1">支付方式</text>
+    <view class="zffs-2">
+      <image style="width:34rpx;height:30rpx;padding-right: 15rpx;" src="https://heyihan.codedemo.vip/wx-zhiFu.png" mode="" />
+      <text>微信支付</text>
+    </view>
+  </view>
+
+  <!-- 支付 -->
+  <view class="zhifu">
+    <view class="zhifu-1">合计￥23</view>
+    <button bindtap="zhifu" style="line-height:50rpx; font-size: 32rpx;" class="zhifu-2">支付</button>
+  </view>
+</view>
+
+<!--提交订单-确定是否更换门店 -->
+<view wx:if="{{isShow}}" class="tjdd">
+  <!-- 请确认自取门店 -->
+  <view class="zqmd">
+    <view class="quxiao">
+      <image class="image" src="https://heyihan.codedemo.vip/orderPayment-qxdd.png" mode="" />
+    </view>
+    <view class="zqmd-top">请确认自取门店</view>
+
+    <!-- 门店详细地址-->
+    <view class="zqmd-middle">
+      <view class="zqmd-middle-1">
+        <image style="width:30rpx;height:38rpx;margin-right: 10rpx;" src="https://heyihan.codedemo.vip/zqmd-top.png" mode="scaleToFill" /> 贵阳鸿通城GO店
+      </view>
+      <view class="zqmd-middle-2">距离您1525米</view>
+      <view class="zqmd-middle-3">贵阳市南明区解放路100号鸿通城一层L1B18至L1B19号</view>
+    </view>
+
+
+    <!-- 确定是否是这家门店 -->
+    <view class="footer">
+      <view class="footer-left btn">更换门店</view>
+      <view class="footer-right btn">就是这家店</view>
+    </view>
+  </view>
+</view>

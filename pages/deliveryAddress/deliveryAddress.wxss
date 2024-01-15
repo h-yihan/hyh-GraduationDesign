@@ -1,0 +1,67 @@
+/* pages/deliveryAddress/deliveryAddress.wxss */
+.title {
+  padding-left: 32rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  color: rgba(0, 0, 0, 0.5);
+  height: 80rpx;
+}
+
+.delivery-address {
+  width: 686rpx;
+  height: 140rpx;
+  padding: 32rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rpx;
+}
+
+.delivery-address-left {
+  width: 598rpx;
+  height: 140rpx;
+}
+
+.delivery-address-left .left-address {
+  width: 598rpx;
+  height: 100rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+}
+
+.delivery-address-left .left-NameTelnumber {
+  height: 40rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.delivery-address-right {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.add {
+  display: flex;
+  width: 664rpx;
+  height: 96rpx;
+  position: fixed;
+  left: 43rpx;
+  bottom: 71rpx;
+  border-radius: rpx;
+  justify-content: space-between;
+}
+
+.add .add-wxdr,
+.add .add-address {
+  border-radius: 10rpx;
+  width: 320rpx;
+  height: 96rpx;
+  background-color: #fff;
+  font-size: 28rpx;
+  line-height: 96rpx;
+  color: rgba(219, 168, 113, 1);
+  text-align: center;
+  border: 1px solid rgba(225, 225, 225, 1);
+}

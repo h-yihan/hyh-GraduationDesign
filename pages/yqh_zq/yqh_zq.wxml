@@ -1,0 +1,61 @@
+<!--pages/yqh_zq/yqh_zq.wxml-->
+
+<!-- 一起喝-自取 -->
+<view class="body">
+
+  <!-- 一起喝-头部 -->
+  <view class="head">
+    <text class="head-1 head-text">发起“一起喝”</text>
+    <text class="head-2 head-text">好友一起点，分账更方便</text>
+  </view>
+
+  <!-- 一起喝-选择方式 -->
+  <view class="xzfs">
+    <view class="xzfs-1">
+      <text>自取</text>
+    </view>
+    <view class="xzfs-1">
+      <text>外卖</text>
+    </view>
+  </view>
+
+  <!--地址- 配送地址 -->
+  <view class="delyvery-Address">
+    <view class="delyvery-left">
+      <text class="delyvery-title">配送地址</text>
+      <view class="delyvery-left-1">
+        <text class="delyvery-left-text-1">贵阳市丨鸿通城购物中心</text>
+        <text class="delyvery-left-text-2">距离您18.0km</text>
+      </view>
+      <text class="delyvery-left-2">廖先生 15085968569</text>
+    </view>
+    <view class="delyvery-right">切换</view>
+  </view>
+
+  <!--地址- 自取门店地址 -->
+  <view class="address">
+    <view class="address-left">
+      <text class="address-title">自取门店</text>
+      <view class="address-left-2">
+        <text class="address-left-text-1">贵阳鸿通城GO店</text>
+        <text class="address-left-text-2">距离30.6km</text>
+      </view>
+      <view class="address-left-3">
+        <image class="address-left-3-1" src="./images/yqh-zq.png" mode="" />
+        <text class="address-left-3-2">贵阳市解放路100号鸿通城一层L1B18号</text>
+      </view>
+      <view class="address-left-4">
+        <view class="address-left-4-1">NOW</view>
+        <view class="address-left-4-2">现在下单，立即制作</view>
+      </view>
+    </view>
+    <view class="address-right">切换</view>
+  </view>
+
+
+  <!-- 我再想想-发起 -->
+  <view class="footer">
+    <view class="btn footer-1">我再想想</view>
+    <navigator url="/pages/yqh_orderSettlement/yqh_orderSettlement" class="btn footer-2">发起</navigator>
+  </view>
+</view>

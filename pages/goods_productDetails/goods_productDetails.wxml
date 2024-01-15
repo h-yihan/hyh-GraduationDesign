@@ -1,0 +1,82 @@
+<!--pages/goods_productDetails/goods_productDetails.wxml-->
+<navigation-bar title="商品详情" back="{{true}}" color="black"></navigation-bar>
+<view class="body">
+  <!-- 商品实物图-banner -->
+  <view>
+    <swiper wx:for="{{swiper}}" class="banner" interval="2000" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+      <swiper-item wx:for="{{item.swiper_item}}">
+        <image class="banner-image" src="{{item.image}}" mode="" />
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 商品详情 -->
+  <view class="spxx">
+    <view class="spxx-top">
+      <view class="top-price">¥ 48.00</view>
+      <view class="top-xl">3766人已购买</view>
+    </view>
+    <view class="spxx-bottom">
+      <view class="spxx-bottom-1">喜茶果汁茶 6瓶入/12瓶入</view>
+      <view class="spxx-bottom-2">地中海桃桃金凤味/伊比利西柚绿味</view>
+    </view>
+  </view>
+
+  <!-- 品牌、发货、运费 -->
+  <view class="middle">
+    <!-- 品牌 -->
+    <view class="middle-1 middle-centent">
+      <text class="text-1">品牌</text>
+      <text class="text-2">喜茶</text>
+    </view>
+
+    <!-- 发货 -->
+    <view class="middle-2 middle-centent">
+      <text class="text-1">发货</text>
+      <view class="text-2 deliver-goods-address">
+        <view style="display: flex;">
+          <text class="deliver-goods-address-1">送至</text>
+          <view class="deliver-goods-address-2">广州市花都区</view>
+        </view>
+        <image class="deliver-goods-address-3" src="https://heyihan.codedemo.vip/right-arrow.png" mode="" />
+      </view>
+    </view>
+
+    <!-- 运费 -->
+    <view class="middle-2 middle-centent">
+      <text class="text-1">运费</text>
+      <text class="text-2">满30.00元包邮</text>
+    </view>
+  </view>
+
+  <view class="sPxx">
+    <text class="sPxx-title">商品详情</text>
+    <!-- 购物车 -->
+    <view class="shoppingCart">
+      <text class="shoppingCart-number">6</text>
+      <image class="shoppingCart-image" src="https://heyihan.codedemo.vip/gwc .png" mode="" />
+    </view>
+  </view>
+
+</view>
+<view style="height:400rpx;background-color: rgba(245, 245, 245, 1);"></view>
+<view class="footer">
+  <view class="footer-middle">
+  <view class="baiHuo-keFu">
+    <image class="image" src="https://heyihan.codedemo.vip/goods-ShangJia.png" mode="" />
+    <text class="text">百货</text>
+  </view>
+  <view class="baiHuo-keFu">
+    <image class="image" src="https://heyihan.codedemo.vip/goods-KeFu.png" mode="" />
+    <text class="text">客服</text>
+  </view>
+  <view class="btn">
+    <text class="btn-text">加入购物袋</text>
+  </view>
+  <!-- 立即购买 -->
+  <view style="background-color: rgba(219, 168, 113, 1)" class="btn">
+    <text class="btn-text">立即购买</text>
+  </view>
+
+</view>
+</view>
